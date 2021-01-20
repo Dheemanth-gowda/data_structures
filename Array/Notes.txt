@@ -1,0 +1,24 @@
+->Array are cache friendly
+->There are two type of array depending on the array memory allocation:
+    1. Dynamically allocation   -> Allocation -> heap Memory
+    2. Fixed Size Memory allocation -> Allocation -> Stac Memory
+
+In java the array memory allocation is always in terms of heap memory allocation.
+
+Dynamic Sized Array are of two types:
+    1.C++       ->      Vector
+    2.Java      ->      ArrayList
+    3.Python    ->      Lists
+
+Vector advantages:
+    1. Dynamic Size
+    2. Inbuilt rich Library
+    3. Easy to know the Size
+    4. No need to pass the Size
+    5. Can be returned from the function
+    6. Vector there is a default value allocation-> For example it saves the time of initializing every value of array elements to zero
+        For int  -> Value is 0
+        For Bool -> Value if false
+    7. We can also copy one Vector to another Vector (//in case of array we will have to run a loop)
+        v1 =  v2 is valid.
+    
