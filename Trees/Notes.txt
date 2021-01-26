@@ -1,0 +1,80 @@
+===============================================================
+                Tree data structure: 
+===============================================================
+
+Consider where you want to represent Hierarchy 
+1. Like company positions to be assigned 
+2. Folder structure where folders/files are there.
+
+===============================================================
+Components of a tree:
+- Node
+- Root
+- Leaf->Degree 0
+- Child Node
+- Parent Node 
+- Subtree -> All non-empty node has multiple trees inside them.
+- Decendants
+- Ancestor
+- Degree - Number of direct decendants.
+- Internal Nodes
+===============================================================
+Applications Of Tree Data Structures:
+===============================================================
+1.Hierarchial data:
+---------------------------------------------------------------
+a. Organisation Structures.
+b. Folder Structures.
+c. XML and HTML Content(JSON Objects)->  HTML Page is stored in tree -> Nested Tags are stored in trees like HTML->Head->Body->All other Tags   
+                                         JavaScript in browser will read the HTML tree and then manipulate the data in the same using functions.   
+                                         XML data is also a tree structure
+d. OOP -> In Inheritance -> children class->children class.
+---------------------------------------------------------------
+2.Binary Search Tree
+3.Binary Heap -> Priority Queues.
+4.B And B+ Tree for Indexing in DBMS -> Two Options-> B and B+ Trees OR Hashing.
+5. Spanning and shortest Path tree:
+            a. Brides : Uses Spanning Tree for sending the data into the next Bride
+            b. Routers: Shortest Path is used and each router is a note finds the neares node for routing.
+6.Parse tree and expression tree : Used in Parsing the source code.
+ 
+
+==============================
+         Binary tree
+==============================
+
+-> The degree of a node can be 0,1,2 -> Atmost 2 nodes can be present.
+
+-> We mostly study Binary tree because its mostly used in many Applications.
+----------------------------------------------------------------------------
+- Implementations of Binary Tree:
+
+In c++:
+-------
+    struct Node
+        {
+            Node *left;
+            Node *right;
+            int key;
+
+            Node(int data){
+                key = data;
+                left = right = NULL;
+            }
+        }
+----------------------------------------------------------------------------
+In java:
+-------
+ class Node{
+     int key;
+     Node left;
+     Node right;
+     Node(int data)
+     {
+         key = data;  // Difference here is that in java we don't need to initialize the references to null anything that is not initialized is a null.
+     }
+ }
+ ---------------------------------------------------------------------------
+=========================
+Traversals
+=========================-
