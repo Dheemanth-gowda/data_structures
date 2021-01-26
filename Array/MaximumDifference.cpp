@@ -27,8 +27,8 @@ int MaximumElement(vector<int> arr)
 {
     int n = arr.size();
     int maxNUM = arr[n - 1];
-    int res = INT_MIN;
-    for (int i = n - 1; i >= 0; i--)
+    int res = arr[1] - arr[0];
+    for (int i = n - 1; i > 0; i--)
     {
         if (arr[i] > maxNUM)
         {
@@ -38,6 +38,7 @@ int MaximumElement(vector<int> arr)
         {
             res = max(res, (maxNUM - arr[i]));
         }
+        // res = max((arr[i] - arr[i - 1]), res);
     }
     return res;
 }
