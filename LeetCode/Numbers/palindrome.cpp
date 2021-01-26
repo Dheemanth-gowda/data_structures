@@ -9,7 +9,7 @@ int main()
     cout << n << endl;
     int rev = 0;
     int temp = n;
-    if (n < 10)
+    if (n < 1)
     {
         cout << "Yes palidrome" << endl;
         return 0;
