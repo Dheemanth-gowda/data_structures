@@ -26,18 +26,12 @@ int MaximumElementsBothSide(vector<int> arr)
 int MaximumElement(vector<int> arr)
 {
     int n = arr.size();
-    int maxNUM = arr[n - 1];
+    int minNum = arr[0];
     int res = arr[1] - arr[0];
-    for (int i = n - 1; i > 0; i--)
+    for (int i = 1; i < n; i++)
     {
-        if (arr[i] > maxNUM)
-        {
-            maxNUM = arr[i];
-        }
-        else
-        {
-            res = max(res, (maxNUM - arr[i]));
-        }
+        res = max(res, (arr[i] - minNum));
+        minNum = min(minNum, arr[i]);
         // res = max((arr[i] - arr[i - 1]), res);
     }
     return res;
